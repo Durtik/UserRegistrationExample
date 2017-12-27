@@ -14,6 +14,9 @@
 		19F1ACF91FF3A9190030157C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 19F1ACF71FF3A9190030157C /* LaunchScreen.storyboard */; };
 		19F1AD041FF3A9190030157C /* UserRegistrationExampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19F1AD031FF3A9190030157C /* UserRegistrationExampleTests.swift */; };
 		19F1AD0F1FF3A91A0030157C /* UserRegistrationExampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19F1AD0E1FF3A91A0030157C /* UserRegistrationExampleUITests.swift */; };
+		19F1AD1D1FF3B6820030157C /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19F1AD1C1FF3B6820030157C /* SignInViewController.swift */; };
+		19F1AD1F1FF3C7D90030157C /* RegisterUserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19F1AD1E1FF3C7D90030157C /* RegisterUserViewController.swift */; };
+		19F1AD211FF3CC4C0030157C /* HomePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19F1AD201FF3CC4C0030157C /* HomePageViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +50,9 @@
 		19F1AD0A1FF3A91A0030157C /* UserRegistrationExampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UserRegistrationExampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		19F1AD0E1FF3A91A0030157C /* UserRegistrationExampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRegistrationExampleUITests.swift; sourceTree = "<group>"; };
 		19F1AD101FF3A91A0030157C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		19F1AD1C1FF3B6820030157C /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
+		19F1AD1E1FF3C7D90030157C /* RegisterUserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterUserViewController.swift; sourceTree = "<group>"; };
+		19F1AD201FF3CC4C0030157C /* HomePageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +109,9 @@
 				19F1ACF51FF3A9190030157C /* Assets.xcassets */,
 				19F1ACF71FF3A9190030157C /* LaunchScreen.storyboard */,
 				19F1ACFA1FF3A9190030157C /* Info.plist */,
+				19F1AD1C1FF3B6820030157C /* SignInViewController.swift */,
+				19F1AD1E1FF3C7D90030157C /* RegisterUserViewController.swift */,
+				19F1AD201FF3CC4C0030157C /* HomePageViewController.swift */,
 			);
 			path = UserRegistrationExample;
 			sourceTree = "<group>";
@@ -259,8 +268,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				19F1AD1F1FF3C7D90030157C /* RegisterUserViewController.swift in Sources */,
 				19F1ACF11FF3A9190030157C /* ViewController.swift in Sources */,
 				19F1ACEF1FF3A9190030157C /* AppDelegate.swift in Sources */,
+				19F1AD211FF3CC4C0030157C /* HomePageViewController.swift in Sources */,
+				19F1AD1D1FF3B6820030157C /* SignInViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

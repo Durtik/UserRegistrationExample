@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SwiftKeychainWrapper
 
 class SignInViewController: UIViewController {
 
@@ -93,6 +94,13 @@ class SignInViewController: UIViewController {
                     let accessToken = parseJSON["token"] as? String
                     let userId = parseJSON["userId"] as? String
                     
+                    
+                    let saveAccessToken: Bool = KeychainWrapper.standard.set(accessToken!, forKey: "accessToken")
+                     let saveUserId: Bool = KeychainWrapper.standard.set(userId!, forKey: "userId")
+                    
+                    print("The access tokes save result: \(saveAccessToken)")
+                    print("The user id save result: \(saveUserId)")
+                    
                     print("accsessToken: \(String(describing: accessToken!))")
                     print("userId: \(String(describing: userId!))")
                     
@@ -109,15 +117,6 @@ class SignInViewController: UIViewController {
                         appDelegate?.window??.rootViewController = homePage
                         
                     }
-                    
-                    
-                    /*
-                    if (userId?.isEmpty)! {
-                        self.displayMessage(userMessage: "Could not successfully  perform this request. Please try again later. ")
-                    } else {
-                        self.displayMessage(userMessage: "Saccessuflly registered a new Account. Please proceed to Sign in ")
-                    }
-                    */
                 } else {
                     self.displayMessage(userMessage: "Could not successfully  perform this request. Please try again later. ")
                 }
